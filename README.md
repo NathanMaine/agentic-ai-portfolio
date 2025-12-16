@@ -41,15 +41,23 @@ The runnable tools live in their own repos, with consistent install flow, CLI en
 
 ## Run Everything (one-command demo)
 
-> **Requires Python 3.10+** (recommended: **Python 3.12**).  
-> If `python3 --version` shows 3.8/3.9, install a newer Python and rerun.
+Requires Python 3.10+ (recommended: Python 3.12).
+If `python3 --version` shows 3.8/3.9, install a newer Python and rerun.
 
-```bash
-python3 --version
+    python3 --version
 
-git clone https://github.com/NathanMaine/agentic-ai-portfolio.git
-cd agentic-ai-portfolio
-make setup
-make install
-make test
-make demo
+    git clone https://github.com/NathanMaine/agentic-ai-portfolio.git
+    cd agentic-ai-portfolio
+    make setup
+    make install
+    make test
+    make demo
+
+If your `python3` is too old (common on macOS):
+
+    brew install python@3.12
+    rm -rf .venv
+    make venv PYTHON=/opt/homebrew/bin/python3.12
+    make install
+    make test
+    make demo
