@@ -53,15 +53,3 @@ make setup
 make install
 make test
 make demo
-
-
----
-
-
-If your python3 is too old (common on macOS)
-brew install python@3.12
-rm -rf .venv
-make venv PYTHON=/opt/homebrew/bin/python3.12
-make install
-make test
-make demo
