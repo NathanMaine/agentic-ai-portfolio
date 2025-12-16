@@ -61,3 +61,25 @@ If your `python3` is too old (common on macOS):
     make install
     make test
     make demo
+
+### Python version note (macOS)
+
+If `make install` fails with “requires a different Python … not in '>=3.10'”, your system `python3` is too old (often 3.8/3.9).
+
+Apple Silicon (M1/M2/M3):
+
+    brew install python@3.12
+    rm -rf .venv
+    make venv PYTHON=/opt/homebrew/bin/python3.12
+    make install
+    make test
+    make demo
+
+Intel Mac:
+
+    brew install python@3.12
+    rm -rf .venv
+    make venv PYTHON=/usr/local/bin/python3.12
+    make install
+    make test
+    make demo
