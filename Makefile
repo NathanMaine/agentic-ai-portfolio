@@ -2,11 +2,19 @@ VENV=.venv
 PY=$(VENV)/bin/python
 PIP=$(VENV)/bin/pip
 
+# Prefer a modern Python. Override if needed:
+#   make venv PYTHON=/opt/homebrew/bin/python3.12
+PYTHON ?= python3.12
+
 setup:
 	./scripts/clone_tools.sh
 
-venv:
-	python3 -m venv $(VENV)
+check-python:
+	@$(PYTHON) -c "import sys; assert sys.version_info >= (3,10), sys.version" \
+	  || (echo "ERROR: Need Python >= 3.10. Try: brew install python@3.12 && make venv PYTHON=/opt/homebrew/bin/python3.12"; exit 1)
+
+venv: check-python
+	$(PYTHON) -m venv $(VENV)
 	$(PIP) install --upgrade pip
 
 install: venv setup
@@ -30,4 +38,4 @@ demo: install
 	cd tools/self-healing-agentic-workflows && $(PY) -m shaw.cli run --workflow workflows/example.yaml --out out
 	cd tools/temporal-executive-agent && $(PY) -m tea.cli plan --tasks tasks/sample.json --out out
 
-.PHONY: setup venv install test demo
+.PHONY: setup check-python venv install test demo
