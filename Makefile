@@ -1,6 +1,8 @@
-VENV=.venv
-PY=$(VENV)/bin/python
-PIP=$(VENV)/bin/pip
+ROOT := $(CURDIR)
+
+VENV := $(ROOT)/.venv
+PY   := $(VENV)/bin/python
+PIP  := $(VENV)/bin/pip
 
 # Prefer a modern Python. Override if needed:
 #   make venv PYTHON=/opt/homebrew/bin/python3.12
