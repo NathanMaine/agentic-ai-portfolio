@@ -83,3 +83,12 @@ Intel Mac:
     make install
     make test
     make demo
+
+
+
+### What the artifacts show you (in plain English)
+
+- They prove each tool actually ran and produced **inspectable, deterministic outputs**, not just console text.
+- They give you **evidence** (JSONL) you can diff across runs, feed into future scoring, or use for demos.
+- They give you **portable artifacts** (graph JSON/DOT, plan/state) that can be visualized or reused by other tools later.
+::contentReference[oaicite:0]{index=0}
