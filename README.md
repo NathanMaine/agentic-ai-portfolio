@@ -1,26 +1,5 @@
 # 👋 Welcome — Start Here
 
-If you’re exploring my work, these three projects are the best place to begin.  
-They show the core themes across my portfolio: **real-time intelligence, agentic AI, governance, workflow orchestration, and developer experience automation.**
-
----
-
-### 🚀 **1. Project Aurora Echo — Real-Time Meeting Intelligence**
-Real-time audio → transcription → reasoning → structured memory.  
-*If you only look at one project, make it this one.*  
-🔗 https://github.com/NathanMaine/Project-Aurora-Echo
-
----
-
-### 🧪 **2. Compliance Validation Agent — Governed Agentic Flows**
-Demonstrates governance-first agent behavior, rule enforcement, and structured validation for enterprise workflows.  
-🔗 https://github.com/NathanMaine/compliance-validation-agent
-
----
-
-### 🧩 **3. Agentforce Data-Aware Agent — Metadata-Aware Safe Actions (Salesforce)**
-Auto-discovers org schema → enforces FLS/sharing → runs safe Apex/Flow actions.  
-🔗 https://github.com/NathanMaine/Agentforce-Data-Aware-Agent
 
 ---
 
