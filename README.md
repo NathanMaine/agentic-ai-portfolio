@@ -1,6 +1,8 @@
 # 👋 Welcome — Start Here
 
+## 📄 Research
 
+[Strategic Architecture Report: Enterprise Agentic Systems for Modern Engineering Organizations (December 2025)](link-here)
 
 ## 🧰 Agent Suite (5 runnable tools)
 
